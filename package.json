@@ -14,5 +14,13 @@
     "communication"
   ],
   "author": "justfn",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justfn/pubsub.git"
+  },
+  "bugs": {
+    "url": "https://github.com/justfn/pubsub/issues"
+  },
+  "homepage": "https://github.com/justfn/pubsub#readme"
 }

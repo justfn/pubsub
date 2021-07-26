@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+  <title> pubsub test </title>
+  <style >
+    
+
+    
+  </style>
+</head>
+<body>
+  
+  
+  
+</body>
+<script type="module">
+  import PubSub, { test, AnyChannel, } from "./index.js";
+  // test()
+  
+  
+  
+  const myChannel01 = Symbol('01');
+  const myChannel02 = Symbol('02');
+  const myAction01 = (channel, ...msgs)=>{
+    console.log('action01', channel, ...msgs);
+  }
+  const myAction02 = (channel, ...msgs)=>{
+    console.log('action02', channel, ...msgs);
+  }
+  
+  // PubSub.sub(AnyChannel, myAction01); // 所有的发布都将被订阅到 
+  PubSub.sub(myChannel01, myAction01);
+  // PubSub.sub(myChannel01, myAction02);
+  PubSub.sub([ myChannel02 ], myAction01);
+  // 
+  PubSub.pub(myChannel01, 'pub01');
+  PubSub.pub(myChannel02, 'pub02');
+  PubSub.pub(AnyChannel, 'pub-all');  // 所有的频道都将接收到订阅 
+
+  
+</script>
+</html>

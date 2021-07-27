@@ -3,9 +3,9 @@
 </div>
 
 <p>
-通过<b>订阅(subscribe)</b><b>频道(channel)</b>, 
-当<b>发布(publish)</b><b>消息(message)</b>到频道(channel), 
-来接收消息message以便执行某些<b>动作(action)</b> 
+首先 <b>subscribe</b> 到一指定的 <b>channel</b>, 
+当接收到该channel <b>publish</b> 的 <b>message</b> 时,
+从而执行预设的 <b>action</b> 
 </p>
 
 

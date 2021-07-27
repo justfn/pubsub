@@ -1,9 +1,11 @@
 <div align="center">
-  <h1> publish & subscribe </h1>
+  <h1> 发布订阅 publish & subscribe </h1>
 </div>
 
 <p>
-pubsub 通过<b>订阅(subscribe)</b>一<b>频道(channel)</b>, 或者<b>发布(publish)</b><b>消息(message)</b>到频道(channel), 来实现通信以便执行某些<b>动作(action)</b> 
+通过<b>订阅(subscribe)</b><b>频道(channel)</b>, 
+当<b>发布(publish)</b><b>消息(message)</b>到频道(channel), 
+来接收消息message以便执行某些<b>动作(action)</b> 
 </p>
 
 
@@ -60,9 +62,9 @@ let token04 = PubSub.sub(myChannel02, myAction02);
 
 // 取消指定的订阅 
 PubSub.clearSubs(token01);
-// 取消指定频道的所有订阅  
+// 取消指定频道的所有订阅 
 PubSub.clearSubs(myChannel01);
-// 取消指定指定动作的所有订阅 
+// 取消指定动作的所有订阅 
 PubSub.clearSubs(myAction02);
 
 PubSub.pub(myChannel01, '01')
@@ -197,7 +199,7 @@ PubSub.pub(myChannel02, 'pub02');
 PubSub.pub(AnyChannel, 'pub-all');  // 所有的频道都将接收到订阅 
 
 ``` 
- 
+
 
 
 

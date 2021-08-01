@@ -14,12 +14,10 @@
 * 自由灵活, channel key 可为(除函数和NaN外的)任意JS变量 (推荐使用引用类型,避免重复) 
 * ES6+ 
 
-## 安装
-  npm i -S @justfn/pubsub 
+# 安装&引入  
+```javascript 
+// $ npm i -S @justfn/pubsub 
 
-
-# 举些栗子 
-```javascript
 // 引入pubsub功能库 
 import PubSub from '@justfn/pubsub';
 

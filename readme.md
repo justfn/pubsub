@@ -97,7 +97,8 @@ PubSub.onError(myChannel, (errEvt)=>{
 
 ### 多频道处理 
 ```javascript
-// 订阅发布的 channel, 可为一数组(由多个channel组成的数组 ), 表示同时订阅/发布多个 channel 
+// 订阅发布的 channel, 可为一数组(由多个channel组成的数组 ), 
+// 表示同时订阅/发布多个 channel 
 
 const myChannel01 = 'c01';
 const myChannel02 = 'c02';
